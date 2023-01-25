@@ -1,15 +1,14 @@
 <?php
-$eleve = [
-    'nom' => 'Doe',
-    'prenom' => 'Marc',
-    'notes' => [10, 20, 15]
+$classe = [
+    [
+        'nom' => 'Doe',
+        'prenom' => 'Jean',
+        'notes' => [16, 16, 16]
+    ],  
+    [
+        'nom' => 'Doe',
+        'prenom' => 'Jean',
+        'notes' => [12, 15, 17]
+    ] 
 ];
-echo $eleve['prenom'] = 'Jean';
-echo $eleve['notes'][] = 16;
-echo $eleve['notes'][] = 16;
-echo $eleve['notes'][] = 16;
-echo $eleve['notes'][] = 16;
-
-print_r ($eleve['notes']);
-
-?>
+echo $classe[1]['notes'][1];
