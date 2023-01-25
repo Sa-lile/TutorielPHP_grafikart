@@ -1,14 +1,10 @@
 <?php
-$classe = [
-    [
-        'nom' => 'Doe',
-        'prenom' => 'Jean',
-        'notes' => [16, 16, 16]
-    ],  
-    [
-        'nom' => 'Doe',
-        'prenom' => 'Jean',
-        'notes' => [12, 15, 17]
-    ] 
+$notes = [10, 15, 16];
+$eleves = [
+    'cm2' => 'Jean',
+    'cm1' => 'Marc',
 ];
-echo $classe[1]['notes'][1];
+foreach ($eleves as $classe => $eleve) {
+    echo " $eleve est dans la classe $classe \n";
+}
+?>
