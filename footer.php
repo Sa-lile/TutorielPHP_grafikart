@@ -4,7 +4,7 @@
     <div class="col-md-4"></div>
     <div class="col-md-4"></div>
     <div class="col-md-4">
-        <h5>Navigation</h5>
+        <h5><span>Navigation</span></h5>
         <ul>
         <?php require 'menu.php'; ?>
         </ul>
