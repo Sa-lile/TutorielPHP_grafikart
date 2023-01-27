@@ -1,5 +1,20 @@
 <?php
 $aDeviner = 150;
+$erreur = null;
+$success = null;
+$value = null;
+if(isset($_GET['chiffre'])){
+
+if($_GET['chiffre'] > $aDeviner) {
+    $erreur = " Votre chiffre est trop grand";
+        } elseif ($_GET['chiffre'] < $aDeviner) {
+            $erreur = "Votre chiffre est trop petit";
+        } else {
+            $success = "Bravo ! Vous avez deviné le chiffre <strong>$aDeviner</strong>";
+        }
+$value = (int)$_GET['chiffre'];
+}
+
 require 'header.php';
 ?>
 
