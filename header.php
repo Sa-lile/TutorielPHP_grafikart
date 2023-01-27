@@ -8,7 +8,7 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
     <!-- afficher le title de chaque page -->
-    <!-- si le fichier défini sinon appraître la faute -->
+    <!-- si le fichier défini sinon apparaître la faute -->
     <!-- on peut enléver echo  -->
     <title>
         <?php if (isset($title)) : ?>
@@ -20,7 +20,6 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
- 
 
 <body>
 
@@ -32,10 +31,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                    <li class="nav-item">
+                    <li class="nav-item <?php if ($_SERVER['SCRIPT_NAME'] === '/index.php'): ?>active<?php endif; ?>">
                         <a class="nav-link active" aria-current="page" href="/index.php">Accueil</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item <?php if ($_SERVER['SCRIPT_NAME'] === '/contact.php'): ?>active<?php endif; ?>">
                         <a class="nav-link" href="/contact.php">Contact</a>
                     </li>
                 </ul>
