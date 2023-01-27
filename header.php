@@ -1,3 +1,5 @@
+
+
 <!doctype html>
 <html lang="en">
 
@@ -7,11 +9,19 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
-    <title>Fixed top navbar example · Bootstrap v5.3</title>
+    <!-- afficher le title de chaque page -->
+    <!-- si le fichier défini sinon apparaître la faute -->
+    <!-- on peut enléver echo  -->
+    <title>
+        <?php if (isset($title)) : ?>
+            <?= $title ?>  
+        <?php else : ?>
+            Mon site
+        <?php endif ?>
+    </title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
- 
 
 <body>
 
@@ -22,16 +32,11 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/index.php">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/contact.php">Contact</a>
-                    </li>
+                <ul class="navbar-nav me-auto">
+                    <?php require 'menu.php'; ?>
                 </ul>
         </div>
     </nav>
 
     <main role="main" class="container">
-    
+</body>
