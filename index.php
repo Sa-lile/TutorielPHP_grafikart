@@ -1,4 +1,11 @@
-<?php require 'header.php'; ?>
+<?php 
+$title = "Page d'accueil";
+require 'header.php'; 
+?>
+<!-- 
+<pre>
+<?php print_r($_SERVER) ?>;
+</pre> -->
 
 <div class="starter-template">
   <h1>Bootstrap starter template</h1>
@@ -6,4 +13,4 @@
 All you get is this text and </p>
 </div>
 
-<?php require 'footer.php'; ?>
+<?php require 'footer.php'; ?>  
