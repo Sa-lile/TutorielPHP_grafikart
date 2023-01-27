@@ -7,7 +7,16 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
-    <title>Fixed top navbar example · Bootstrap v5.3</title>
+    <!-- afficher le title de chaque page -->
+    <!-- si le fichier défini sinon appraître la faute -->
+    <!-- on peut enléver echo  -->
+    <title>
+        <?php if (isset($title)) : ?>
+            <?= $title ?>  
+        <?php else : ?>
+            Mon site
+        <?php endif ?>
+    </title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
