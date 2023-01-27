@@ -1,3 +1,5 @@
+
+
 <!doctype html>
 <html lang="en">
 
@@ -30,13 +32,8 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                    <li class="nav-item <?php if ($_SERVER['SCRIPT_NAME'] === '/index.php'): ?>active<?php endif; ?>">
-                        <a class="nav-link active" aria-current="page" href="/index.php">Accueil</a>
-                    </li>
-                    <li class="nav-item <?php if ($_SERVER['SCRIPT_NAME'] === '/contact.php'): ?>active<?php endif; ?>">
-                        <a class="nav-link" href="/contact.php">Contact</a>
-                    </li>
+                <ul class="navbar-nav me-auto">
+                    <?php require 'menu.php'; ?>
                 </ul>
         </div>
     </nav>
